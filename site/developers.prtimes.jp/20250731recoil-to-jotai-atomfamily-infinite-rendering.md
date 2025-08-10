@@ -10,10 +10,8 @@
 
 あわせて読みたい
 
-![](data:image/gif;base64...)![](https://developers.prtimes.jp/wp-content/uploads/2025/07/company-page-recoil-migration-300x169.png)
 
 [企業ページにおけるRecoilからの段階的移行](https://developers.prtimes.jp/2025/07/18/company-page-recoil-migration/)
-こんにちは、フロントエンドエンジニアのやなぎ（ @apple\_yagi ）です。 PR TIMESのフロントエンドでは、これまで状態管理にRecoilを利用してきました。しか...
 
 このエントリーでも紹介した通り、Recoil を useMemo、useContext、TanStack Query、Jotai に移行しました。その後、Recoil の atomFamily を Jotai の atomFamily に移行したことによる無限レンダリングの事象を発見し、修正したのでご紹介します。
 
@@ -108,7 +106,6 @@ React ではコンポーネントが再レンダリングされるたびに、�
 この問題を解消するためには、パラメータオブジェクトの参照が毎回変わらないようにする必要があります。そこで、パラメータとなるオブジェクトをコンポーネントの外（ファイルのトップレベル）で一度だけ定義し、それを atomFamily の引数として渡すように修正しました。これにより、コンポーネントが何度レンダリングされても params は同じ参照のまま維持され、不要な atom の再生成や無限レンダリングが発生しなくなりました。
 
 ```typescript
-const params: PagerParameters = {...}
 
 export function LogoListPager() {
   const pager = useAtomValue(pagerState(params));
