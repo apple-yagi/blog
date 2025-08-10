@@ -1,0 +1,32 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "apple-yagi's blog repo",
+  "main": "index.js",
+  "scripts": {
+    "lint:md": "markdownlint-cli2 \"**/*.md\" \"!node_modules/**\"",
+    "lint:text": "textlint \"site/**/*.md\"",
+    "lint": "pnpm run --parallel /lint:/",
+    "lint:fix": "markdownlint-cli2 --fix \"**/*.md\" \"!node_modules/**\" && textlint --fix \"site/**/*.md\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apple-yagi/blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apple-yagi/blog/issues"
+  },
+  "homepage": "https://github.com/apple-yagi/blog#readme",
+  "devDependencies": {
+    "@textlint-ja/textlint-rule-preset-ai-writing": "^1.6.0",
+    "markdownlint-cli2": "^0.18.1",
+    "textlint": "^15.2.1",
+    "textlint-rule-preset-ja-technical-writing": "^12.0.2",
+    "textlint-rule-prh": "^6.1.0"
+  },
+  "packageManager": "pnpm@10.14.0"
+}

@@ -4,8 +4,6 @@ https://developers.prtimes.jp/2024/12/24/react-router-v7-upgrade/
 
 # React Router v7にバージョンアップしました
 
-
-
 こんにちは、フロントエンドエンジニアのやなぎ（[@apple\_yagi](https://twitter.com/apple_yagi)）です。
 
 先日のリファクタリングデーでReact Routerのバージョンをv6からv7にバージョンアップしました。その際に行った変更やPR TIMESにおけるReact Router v7の使い方についてご紹介します。リファクタリングデーについては以下の記事をご参照ください。
@@ -256,7 +254,7 @@ React Router v7はLibrary modeとFramework modeの2種類があります。Frame
 
 あわせて読みたい
 
-また、PR TIMESの現状の構成では Vite で行っている処理は JavaScript と CSS のバンドルのみで HTML の出力は行っていません。Framework mode を使用すると HTML の出力まで Vite で行うことになり、デプロイの仕組みなどを変更する必要があります。そのため、今後も Framework mode を使用することは考えていません。
+また、PR TIMESの現状の構成では Vite で行っている処理は JavaScript と CSS のバンドルのみで HTML の出力は行っていません。Framework mode を使用すると HTML の出力まで Vite で行うことになり、デプロイの仕組みなどを変更する必要があります。そのため、今後も Framework mode を使用しません。
 
 ## まとめ
 
@@ -266,7 +264,7 @@ React Router v7はLibrary modeとFramework modeの2種類があります。Frame
 
 また、PR TIMESのフロントエンドチームではリファクタリングデーを活用して、ライブラリのバージョンをできるだけ最新の状態に保つ活動を行っています。フロントエンドはライブラリの更新頻度や流行り廃りが激しいですが、今後もリファクタリングデーなどを通じて追従していきたいと思います。
 
-## **We are hiring!**
+## We are hiring
 
 フロントエンドエンジニアを含む各種ポジションでの採用を進めています！興味があればぜひご応募ください。
 

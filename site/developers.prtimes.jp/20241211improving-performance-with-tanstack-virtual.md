@@ -4,8 +4,6 @@ https://developers.prtimes.jp/2024/12/11/improving-performance-with-tanstack-vir
 
 # TanStack Virtualを使用してパフォーマンス改善をした話
 
-
-
 こんにちは、フロントエンドエンジニアのやなぎ（[@apple\_yagi](https://twitter.com/apple_yagi)）です。
 
 先日、メディアリスト機能のリニューアルを実施しました。リニューアルの詳細については、以下のプレスリリースをご覧ください。

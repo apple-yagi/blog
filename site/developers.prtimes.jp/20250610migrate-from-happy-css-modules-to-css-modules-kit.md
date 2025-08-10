@@ -4,16 +4,11 @@ https://developers.prtimes.jp/2025/06/10/migrate-from-happy-css-modules-to-css-m
 
 # happy-css-modulesからcss-modules-kitに移行しました
 
-
-
-
-
 こんにちは、フロントエンドエンジニアのやなぎ（[@apple\_yagi](https://twitter.com/apple_yagi)）です。
 
 先月公開したエントリーでもご紹介した通り、PR TIMESのフロントエンドは現在CSS Modulesを使用してスタイリングを行っています。
 
 あわせて読みたい
-
 
 上記のエントリーでは[happy-css-modules](https://github.com/mizdra/happy-css-modules)を使用してCSS Modulesの型定義ファイルを生成していましたが、先日[css-modules-kit](https://github.com/mizdra/css-modules-kit/)に移行したのでご紹介します。
 
@@ -39,7 +34,6 @@ $ pnpm hcm -w
 ```
 
 happy-css-modulesが生成した型定義ファイルにより、定義されていないCSSセレクタの使用を防止できたり、コードジャンプが可能となったりするメリットがありましたが、ターミナルで常時型定義ファイルを生成するコマンドを実行しておくのは少々面倒でした。
-
 
 GitHub
 
@@ -91,7 +85,6 @@ PR TIMESでは以前からhappy-css-modulesのoutDirオプションを使用し�
 
 あわせて読みたい
 
-
 ## まとめ
 
 happy-css-modulesからcss-modules-kitに移行したことにより、CSS Modulesを書く際の開発者体験がより一層良くなりました。移行してから1週間ほど経ちますが、不具合などの連絡もあがっておらず、happy-css-modulesよりもさらにhappyにCSS Modulesを書くことができるようになりました。
@@ -107,4 +100,3 @@ happy-css-modulesからcss-modules-kitに移行したことにより、CSS Modul
 株式会社PR TIMES
 
 株式会社PR TIMESが公開している、02．開発部 の求人一覧です
-

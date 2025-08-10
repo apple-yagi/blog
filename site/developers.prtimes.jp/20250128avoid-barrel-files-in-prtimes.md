@@ -4,8 +4,6 @@ https://developers.prtimes.jp/2025/01/28/avoid-barrel-files-in-prtimes/
 
 # eslint-plugin-no-barrel-filesを導入してBarrel filesをやめた話
 
-
-
 こんにちは、フロントエンドエンジニアのやなぎ（[@apple\_yagi](https://twitter.com/apple_yagi)）です。
 
 PR TIMESでは[フロントエンドのReactリプレイス当初](https://developers.prtimes.jp/2021/11/10/replace-react/)より Barrel file を作成するルールがありました。しかし、先日そのルールを廃止することに決めたため、その経緯についてご紹介します。
@@ -86,7 +84,7 @@ GitHub
 
 PR TIMESのフロントエンドのコーディングルールはドキュメントを作って運用とはしておらず、ESLintを正としてコーディングルールを運用しています。今回のBarrel filesのルールはESLintで運用されていなかったため、曖昧な状態で運用されていました。この教訓を生かして、今回のような曖昧なルールを見つけた際はESLintによって管理していきたいと思います。
 
-## **We are hiring!**
+## We are hiring
 
 フロントエンドエンジニアを含む各種ポジションでの採用を進めています！興味があればぜひご応募ください。
 

@@ -4,10 +4,6 @@ https://developers.prtimes.jp/2025/02/26/snapshot-testing-with-phpunit-snapshot-
 
 # phpunit-snapshot-assertionsを使用してスナップショットテストを導入した話
 
-
-
-
-
 こんにちは、フロントエンドエンジニアのやなぎ（[@apple\_yagi](https://twitter.com/apple_yagi)）です。
 
 PR TIMESではプレスリリース検索などを行う際に[OpenSearch](https://opensearch.org/)を使用しており、PHPで生成した検索クエリをOpenSearchに送信して、検索を行なっています。検索クエリの生成はコードを読むことである程度はわかるものの、複雑なものになると最終的にどのようなクエリが出来上がるのかわかりにくいという問題がありました。その問題を解決するために、先日 [spatie/phpunit-snapshot-assertions](https://github.com/spatie/phpunit-snapshot-assertions) を使用したスナップショットテストを導入したのでご紹介します。
@@ -249,9 +245,9 @@ class PressReleaseSearchQueryFactoryTest extends TestCase
 
 ## まとめ
 
-今回、PHPのUnitテストにスナップショットテストを導入しました。スナップショットテストを使用するケースはある程度限られますが、今回のようなケースやSQL Builderなどのテストには最適だと考えており、今後も適切なケースがあれば活用していきたいと思います。
+今回、PHPのUnitテストにスナップショットテストを導入しました。スナップショットテストを使用するケースはある程度限られますが、今回のようなケースやSQL Builderなどのテストには不具合がないと考えており、今後も適切なケースがあれば活用していきたいと思います。
 
-## **We are hiring!**
+## We are hiring
 
 弊社ではバックエンドエンジニアはもちろん、各種ポジションで採用を行っています！
 
@@ -262,4 +258,3 @@ class PressReleaseSearchQueryFactoryTest extends TestCase
 株式会社PR TIMES
 
 株式会社PR TIMESが公開している、02．開発部 の求人一覧です
-

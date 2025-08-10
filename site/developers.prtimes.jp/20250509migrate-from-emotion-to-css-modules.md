@@ -4,10 +4,6 @@ https://developers.prtimes.jp/2025/05/09/migrate-from-emotion-to-css-modules/
 
 # EmotionからCSS Modulesに移行しました
 
-
-
-
-
 こんにちは、フロントエンドエンジニアのやなぎ（[@apple\_yagi](https://twitter.com/apple_yagi)）です。
 
 PR TIMESのフロントエンドではこれまで[Emotion](https://github.com/emotion-js/emotion)を使ってスタイリングを行っていましたが、2024年6月からCSS Modulesへの移行作業を進めており、先日その作業がすべて完了しました。本エントリーでは、移行の背景や技術選定、移行作業中に発生した問題などについてご紹介します。
@@ -67,7 +63,6 @@ CSS Modulesを導入するにあたり使用したライブラリと、移行作
 CSS Modulesの型定義ファイルを生成するために、happy-css-modulesを利用しています。こちらについては昨年投稿したエントリーで紹介しているため、そちらをご参照ください。
 
 あわせて読みたい
-
 
 ### postcss-nestingの導入
 
@@ -505,4 +500,3 @@ PR TIMESはメンテナンスコスト、フレームワークの進化の追従
 株式会社PR TIMES
 
 株式会社PR TIMESが公開している、02．開発部 の求人一覧です
-
