@@ -5,6 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Repository Overview
 
 This is a blog repository containing technical articles in Markdown format. Articles are organized under two main directories:
+
 - `site/developers.prtimes.jp/` - Development blog articles from PR TIMES
 - `site/zenn.dev/` - Technical articles from Zenn
 
