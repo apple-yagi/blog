@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint:md": "markdownlint-cli2 \"**/*.md\" \"!node_modules/**\"",
-    "lint:text": "textlint \"site/**/*.md\"",
-    "lint": "pnpm run --parallel /lint:/",
-    "lint:fix": "markdownlint-cli2 --fix \"**/*.md\" \"!node_modules/**\" && textlint --fix \"site/**/*.md\"",
+    "lint:text": "textlint --config .textlintrc.js \"site/**/*.md\"",
+    "lint": "pnpm run --parallel lint:md lint:text",
+    "lint:fix": "markdownlint-cli2 --fix \"**/*.md\" \"!node_modules/**\" && textlint --fix --config .textlintrc.js \"site/**/*.md\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

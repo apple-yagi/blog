@@ -13,6 +13,6 @@ module.exports = {
       "arabic-kanji-numbers": false,
       "no-unmatched-pair": false
     },
-    "@textlint-ja/preset-ai-writing": true
+    "@textlint-ja/textlint-rule-preset-ai-writing": true
   }
 };
