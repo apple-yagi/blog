@@ -25,7 +25,7 @@ VALUES (1, "株式会社テスト", "000-0000", "東京都", "000-0000-0000",
 
 ## 実装したSeederについて
 
-PDO、PrSql、[Faker](https://github.com/FakerPHP/Faker)を使用して、以下のようなSeederを実装しました：
+PDO、PrSql、[Faker](https://github.com/FakerPHP/Faker)を使用し、次のような Seeder を実装しました。
 
 ```php
 class CompanySeeder
@@ -50,7 +50,7 @@ class CompanySeeder
 }
 ```
 
-このSeederの特徴：
+この Seeder の特徴は以下の通りです。
 
 - 必要な項目のみを指定してテストデータを作成可能
 - Fakerを使用してランダムなダミーデータを自動生成
@@ -83,4 +83,4 @@ class CompanyTest extends TestCase
 3. **テストの可読性向上**: テストコード内でデータの作成意図が明確
 4. **開発効率の向上**: Fakerによる自動データ生成で時間短縮
 
-この素朴なSeeder実装により、Unitテストの実装効率が大幅に改善されました。
+この素朴な Seeder 実装によって SQL ファイルを別途用意する手間がなくなり、テストを追加するときは Seeder 呼び出しを 1 行書くだけで済むようになりました。

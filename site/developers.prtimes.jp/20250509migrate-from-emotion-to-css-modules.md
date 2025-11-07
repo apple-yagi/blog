@@ -161,11 +161,11 @@ const button = css`
 }
 ```
 
-そのため、移行作業時には「&」を付けることを意識する必要がありました。
+そのため、移行作業では「&」を付けることを常に意識しました。
 
 ### JavaScriptの変数をCSS Modulesで使用する
 
-Emotionは以下のようにJavaScriptの変数を直接スタイルに適用することができます。
+Emotion では以下のように JavaScript の変数を直接スタイルに適用できます。
 
 ```
 function Button() {
@@ -398,7 +398,7 @@ parent.module.css
 }
 ```
 
-ビルド時に出力されるclassNameの順序を完全に制御するのは難しいため、同じCSSプロパティを上書きしたい場合はinline styleを使用するように対応しました。inline styleは詳細度が最も高いため、CSSの出力順に関係なくスタイルを上書き可能です。
+ビルド時に出力される className の順序を厳密に制御するのは難しいため、同じ CSS プロパティを上書きしたい場合は inline style を使用するように対応しました。inline style は詳細度が最も高いため、CSS の出力順に関係なくスタイルを上書き可能です。
 
 ```
 export function Parent() {
@@ -415,7 +415,7 @@ export function Parent() {
 
 ### EmotionとCSS Modulesが混在した時の問題
 
-CSS Modulesへの移行はコンポーネント単位で少しずつ行いました。そのため、1つのHTML要素に対してCSS ModulesとEmotionの両方でスタイリングが行われる場合がありました。両方で同じCSSプロパティに対してスタイリングを行った際、css propsの渡し方によって適用されるCSSが変わりました。
+CSS Modules への移行はコンポーネント単位で少しずつ進めました。その結果、1 つの HTML 要素に CSS Modules と Emotion の両方でスタイルを適用するケースも発生しました。両者で同じ CSS プロパティを扱うと、css props の渡し方によって適用される CSS が変わりました。
 
 まず、以下のようにcss propsとclassNameが設定されている場合は、css propsの方が適用されます。
 
@@ -489,7 +489,7 @@ PR TIMESでは親コンポーネントからcss propsを渡す際にスプレッ
 
 PR TIMESはメンテナンスコスト、フレームワークの進化の追従・乗り換えのしやすさを重視し、EmotionからCSS Modulesに移行しました。この移行にはフロントエンドに興味のあるバックエンドエンジニアや、インターンなどフロントエンドメンバー以外の協力が多くあり、移行し切ることができました。今後はReact 19へのバージョンアップのためにRecoilの依存を取り除くという大きな課題もあるため、引き続き取り組んでいきます。
 
-## **We are hiring!**
+## We are hiring!
 
 フロントエンドエンジニアを含む各種ポジションでの採用を進めています！興味があればぜひご応募ください。
 

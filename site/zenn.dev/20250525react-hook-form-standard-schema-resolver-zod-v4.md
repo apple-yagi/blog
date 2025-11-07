@@ -15,7 +15,7 @@ https://zenn.dev/apple_yagi/articles/e3131cb5bb6b8f
 
 React Hook FormとZodを組み合わせて使う際には、`zodResolver`を使うのが一般的ですが、残念ながらこのzodResolverはまだzod v4に対応していません。
 
-例えば、次のようなコードを書くと、型エラーが発生します：
+例えば次のコードでは型エラーが発生します。
 
 ```typescript
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -40,7 +40,7 @@ export function Form() {
 
 ## 解決策：standardSchemaResolver を使おう
 
-このzod v4との互換性の問題に対しては、`standardSchemaResolver`を使用することで解決できます：
+このzod v4との互換性の問題に対しては、`standardSchemaResolver`を使用することで解決できます。以下のように書き換えればOKです。
 
 ```typescript
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema';

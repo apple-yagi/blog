@@ -21,7 +21,7 @@ https://developers.prtimes.jp/2021/11/01/%e4%bc%81%e6%a5%ad%e3%83%9a%e3%83%bc%e3
 
 ### OpenAPIの導入
 
-OpenAPIは、RESTful APIを記述するための仕様フォーマットで、以下を可能にします：
+OpenAPIは、RESTful APIを記述するための仕様フォーマットで、次のことを可能にします。
 
 - 統一されたAPI仕様ドキュメンテーション
 - 自動的なAPIリファレンス生成
@@ -31,11 +31,11 @@ OpenAPIは、RESTful APIを記述するための仕様フォーマットで、�
 
 ### 使用したツール
 
-1. **Stoplight Studio**: OpenAPI仕様のGUIエディター
-2. **Redoc**: APIドキュメントのレンダリングツール
-3. **Prism**: モックサーバー生成ツール
-4. **OpenAPI Generator**: API仕様からの自動コード生成
-5. **Dredd**: API仕様準拠テストツール
+1. **Stoplight Studio**は OpenAPI 仕様の GUI エディター。
+2. **Redoc**は API ドキュメントのレンダリングツール。
+3. **Prism**はモックサーバー生成ツール。
+4. **OpenAPI Generator**は API 仕様から自動コードを生成するツール。
+5. **Dredd**は API 仕様準拠テストツール。
 
 ### 得られた効果
 

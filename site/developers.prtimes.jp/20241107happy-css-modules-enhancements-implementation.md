@@ -13,18 +13,18 @@ https://developers.prtimes.jp/2024/11/07/happy-css-modules-enhancements-implemen
 
 ## happy-css-modulesで改善したかった点
 
-従来のhappy-css-modulesには2つの主な課題がありました：
+従来の happy-css-modules には 2 つの主な課題がありました。具体的には次の通りです。
 
 1. CSS Modulesの型定義ファイルを同じディレクトリに生成するため、ディレクトリが視認性の低いものになっていた
 2. CSSファイルの名前変更時に古い型定義ファイルが残ってしまう
 
-## 実装した機能: outDirオプション
+## 実装した機能（outDirオプション）
 
 Pull Requestで`outDir`オプションを実装し、型定義ファイルを任意のディレクトリに出力できるようにしました。
 
 ## プロダクトへの導入
 
-PR TIMESでは、以下のように設定しました：
+PR TIMES では次のように設定しました。
 
 ```json
 {
@@ -40,4 +40,4 @@ PR TIMESでは、以下のように設定しました：
 
 ## monorepo環境での注意点
 
-pnpmを利用したmonorepo環境では、別パッケージのコンポーネントをインポートする際に適切な設定が必要です。
+pnpm を利用した monorepo 環境では、別パッケージのコンポーネントをインポートする際に `compilerOptions.rootDirs` や `paths` を各パッケージで揃える設定が必要です。

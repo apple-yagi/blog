@@ -13,7 +13,7 @@ PR TIMESでは、React/TypeScriptのコードをWebpackでビルドしていま�
 
 ## esbuildとは
 
-esbuildは、Go言語で実装されたJavaScript/TypeScriptのビルドツールです。主な特徴は以下の通りです：
+esbuildは、Go言語で実装されたJavaScript/TypeScriptのビルドツールです。主な特徴を以下にまとめます。
 
 - キャッシュなしでの高速ビルド
 - ES6およびCommonJSのサポート
@@ -24,7 +24,7 @@ esbuildは、Go言語で実装されたJavaScript/TypeScriptのビルドツー�
 
 ## 実装
 
-チームでは、以下の点に特に注意してesbuildを設定しました：
+チームでは、次の点に特に注意してesbuildを設定しました。
 
 - React 17のサポート
 - Emotion CSS-in-JSライブラリの対応
@@ -32,15 +32,15 @@ esbuildは、Go言語で実装されたJavaScript/TypeScriptのビルドツー�
 
 ## 結果
 
-ビルド時間の比較：
+ビルド時間の比較結果は次の通りです。
 
-- Webpack + ts-loader（従来）: 39.85秒
-- Webpack + esbuild-loader: 28.09秒  
-- Pure esbuild: 2.61秒
+- Webpack + ts-loader（従来）は 39.85 秒。
+- Webpack + esbuild-loader では 28.09 秒。
+- Pure esbuild にすると 2.61 秒。
 
 ### 課題
 
-ビルド時間は大幅に改善されましたが、以下の点に注意が必要でした：
+ビルド時間は 39.85 秒から 2.61 秒まで短縮できましたが、次の点に注意が必要でした。
 
 - バンドルファイルサイズの増加
 - 互換性の問題の可能性

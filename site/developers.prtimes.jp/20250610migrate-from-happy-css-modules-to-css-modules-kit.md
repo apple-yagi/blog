@@ -14,7 +14,7 @@ https://developers.prtimes.jp/2025/06/10/migrate-from-happy-css-modules-to-css-m
 
 目次
 
-## **css-modules-kit とは**
+## css-modules-kit とは
 
 css-modules-kitはCSS Modulesを便利にするためのツールキットで以下の機能を提供しています。
 
@@ -56,7 +56,7 @@ GitHub
 
 A toolkit for making CSS Modules useful. Contribute to mizdra/css-modules-kit development by creating an account on GitHub.
 
-`@css-modules-kit/codegen` を使用することでhappy-css-modulesのように型定義ファイルを生成することは可能ですが、型定義ファイルのデフォルトの生成場所が `generated` ディレクトリになっているため、tsconfig.jsonの `compilerOptions.rootDirs` を以下のように修正する必要があります。
+`@css-modules-kit/codegen` を使用することでhappy-css-modulesのように型定義ファイルを生成することは可能ですが、型定義ファイルのデフォルトの生成場所が `generated` ディレクトリになっているため、tsconfig.jsonの `compilerOptions.rootDirs` を以下のように修正します。
 
 ```
 {
@@ -89,7 +89,7 @@ PR TIMESでは以前からhappy-css-modulesのoutDirオプションを使用し�
 
 happy-css-modulesからcss-modules-kitに移行したことにより、CSS Modulesを書く際の開発者体験がより一層良くなりました。移行してから1週間ほど経ちますが、不具合などの連絡もあがっておらず、happy-css-modulesよりもさらにhappyにCSS Modulesを書くことができるようになりました。
 
-## **We are hiring!**
+## We are hiring!
 
 フロントエンドエンジニアを含む各種ポジションでの採用を進めています！興味があればぜひご応募ください。
 

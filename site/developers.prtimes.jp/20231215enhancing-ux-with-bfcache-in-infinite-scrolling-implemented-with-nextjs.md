@@ -11,12 +11,12 @@ https://developers.prtimes.jp/2023/12/15/enhancing-ux-with-bfcache-in-infinite-s
 
 初期の実装では、`getServerSideProps`で検索結果の1ページ目を取得し、そのデータを Tanstack Query に hydrate する形で実装しました。
 
-主な目的は2つありました：
+主な目的は次の 2 点でした。
 
 1. 検索結果が0件の場合にHTTPステータスコード404を返すこと
 2. コンテンツの表示を速くすること
 
-サンプルコード:
+サンプルコードは以下の通りです。
 
 ```javascript
 export const getServerSideProps = async ({req, res, query}) => {
@@ -47,7 +47,7 @@ export const getServerSideProps = async ({req, res, query}) => {
 
 この問題は無限スクロールのUIでよく見られる課題で、ユーザーからは「毎回別タブで開く」という不満の声がありました。
 
-具体的な問題：
+具体的な問題は以下の通りです。
 
 - ユーザーが無限スクロールで複数ページを表示
 - 詳細ページに遷移
@@ -89,7 +89,7 @@ useEffect(() => {
 
 ## 結果
 
-BFCacheの活用により：
+BFCache の活用により、次のような効果が得られました。
 
 1. **UX改善**: ユーザーがブラウザバック時に以前のスクロール位置とデータが保持される
 2. **開発コストの削減**: アプリケーションコード側での複雑な状態管理が不要

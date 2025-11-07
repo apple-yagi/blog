@@ -13,7 +13,7 @@ PR TIMESでは、フロントエンドのLintツールをESLintからXOに移行
 
 ## 移行の背景
 
-移行を決めた主な理由は以下の3点でした：
+移行を決めた主な理由は次の 3 点だ。
 
 1. 既存のESLint設定が「継ぎはぎ」状態で、明確な理由付けが欠如していた
 2. 開発者が自由にlintルールを変更しており、重要なチェックが回避される可能性があった
@@ -21,7 +21,7 @@ PR TIMESでは、フロントエンドのLintツールをESLintからXOに移行
 
 ## XOとは？
 
-XOは「opinionated but configurable ESLint wrapper」で、以下の特徴があります：
+XO は「opinionated but configurable ESLint wrapper」で、次のような特徴を持つ。
 
 - 厳格で読みやすいコードを強制
 - Prettierを内包

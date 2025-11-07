@@ -9,7 +9,7 @@ https://developers.prtimes.jp/2022/04/14/web-front-end-development-enviroment-in
 
 ## 概要
 
-この記事では、PR TIMESにおけるフロントエンド開発基盤の変革について説明します。主な焦点は以下の通りです：
+この記事では、PR TIMESにおけるフロントエンド開発基盤の変革について説明します。特に次のポイントに焦点を当てています。
 
 - Reactへの移行
 - フロントエンドコードの単一モノレポへの統合

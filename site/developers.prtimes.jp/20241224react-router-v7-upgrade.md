@@ -254,7 +254,7 @@ React Router v7はLibrary modeとFramework modeの2種類があります。Frame
 
 あわせて読みたい
 
-また、PR TIMESの現状の構成では Vite で行っている処理は JavaScript と CSS のバンドルのみで HTML の出力は行っていません。Framework mode を使用すると HTML の出力まで Vite で行うことになり、デプロイの仕組みなどを変更する必要があります。そのため、今後も Framework mode を使用しません。
+また、PR TIMES の現状の構成では Vite で行っている処理は JavaScript と CSS のバンドルのみで HTML の出力は行っていません。Framework mode を使用すると HTML の出力まで Vite が担当し、デプロイの仕組みなども別の設計に切り替える前提となります。そのため、今後も Framework mode は採用しません。
 
 ## まとめ
 

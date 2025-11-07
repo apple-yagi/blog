@@ -9,7 +9,7 @@ https://developers.prtimes.jp/2022/02/24/press_release_image_optimization/
 
 ## 主なハイライト
 
-この記事では、PR TIMESの新卒エンジニアがプレスリリースのサムネイル画像や画像の画質改善に取り組んだプロジェクトについて詳しく説明します。主な改善点は以下の通りです：
+この記事では、PR TIMESの新卒エンジニアがプレスリリースのサムネイル画像や画像の画質改善に取り組んだプロジェクトについて詳しく説明します。主な改善点は次のとおりです。
 
 1. 高画質画像のS3へのアップロード
 2. Fastly Image Optimizerを使用した動的な画像リサイズと最適化
@@ -25,7 +25,7 @@ https://developers.prtimes.jp/2022/02/24/press_release_image_optimization/
 ## 技術的な解決策
 
 - 単一の大きな画像をS3にアップロード
-- 以下のパラメータでFastly Image Optimizerを使用：
+- Fastly Image Optimizerでは次のパラメータを使用しました。
   - 幅と高さの調整
   - WebP変換
   - 品質設定（非WebPで85、WebPで65-75）

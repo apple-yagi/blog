@@ -15,7 +15,7 @@ https://developers.prtimes.jp/2024/10/10/clean-phpunit-log-output/
 
 ### 1. Notice Errorを出力しないようにする
 
-CIでは、Notice Errorを無視するように設定しました：
+CI では Notice Error を無視するように設定しました。設定例は次の通りです。
 
 ```php
 $isCi = getenv('CI') === 'true';
@@ -26,7 +26,7 @@ if ($isCi) {
 
 ### 2. NullLoggerを使用する
 
-テスト時にログを出力しないよう、`Psr\Log\NullLogger`を使用しました：
+テスト時にログを出力しないよう、`Psr\Log\NullLogger` を使用しています。
 
 ```php
 class UserServiceTest extends TestCase
@@ -43,7 +43,7 @@ class UserServiceTest extends TestCase
 
 ### 3. LoggerにNullHandlerを渡す
 
-`Monolog\Logger`の場合は、`Monolog\Handler\NullHandler`を使用しました：
+`Monolog\Logger` を利用する場合は、`Monolog\Handler\NullHandler` を併用します。
 
 ```php
 class PressReleaseServiceTest extends TestCase

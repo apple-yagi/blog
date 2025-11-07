@@ -11,14 +11,14 @@ https://developers.prtimes.jp/2024/06/06/replace-top-page-with-nextjs/
 
 ## SP用ページで使用するカルーセルライブラリの選定
 
-トップページのSP版では、横スワイプでタブを切り替えることができます。このスワイプ操作を実装するため、以下のカルーセルライブラリを検討しました：
+トップページの SP 版では横スワイプでタブを切り替えます。このスワイプ操作を実装するため、次のカルーセルライブラリを比較検討しました。
 
 - Swiper
 - Nuka Carousel
 - React Slick
 - Embla Carousel
 
-最終的に、Embla Carouselを選択した理由は以下の通りです：
+最終的に Embla Carousel を選択した理由は以下の通りです。
 
 - スクロール位置のリセット問題を解決
 - スワイプの閾値が適切
@@ -27,19 +27,19 @@ https://developers.prtimes.jp/2024/06/06/replace-top-page-with-nextjs/
 
 ## BFCacheを有効化
 
-トップページでBFCacheを有効にし、以下のメリットを実現：
+トップページで BFCache を有効にし、次のメリットを得ました。
 
 - ブラウザバック時に元のタブ位置を保持
 - 新着タブの無限スクロールデータを保持
 
 ## キャッシュの設定
 
-CDNでServer Side RenderingのHTMLをキャッシュする戦略を採用：
+CDN で Server Side Rendering の HTML をキャッシュする戦略を採用しました。
 
 - Surrogate-Control ヘッダーを使用
-- キャッシュ設定：`max-age=5, stale-while-revalidate=10`
+- キャッシュ設定は `max-age=5, stale-while-revalidate=10`
 - Fastlyで約90%のキャッシュヒット率を実現
-- 実装後、レスポンス時間が大幅に改善
+- 実装後はキャッシュヒット時に Fastly から直接 HTML を返せるようになり、レスポンス時間のばらつきが小さくなった
 
 ## まとめ
 
