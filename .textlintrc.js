@@ -11,8 +11,13 @@ module.exports = {
       "no-doubled-joshi": false,
       "no-exclamation-question-mark": false,
       "arabic-kanji-numbers": false,
-      "no-unmatched-pair": false
+      "no-unmatched-pair": false,
     },
-    "@textlint-ja/textlint-rule-preset-ai-writing": true
-  }
+    "@textlint-ja/preset-ai-writing": {
+      "ai-tech-writing-guideline": {
+        severity: "info",
+        allows: ["する必要があります"],
+      },
+    },
+  },
 };
